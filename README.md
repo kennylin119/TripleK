@@ -17,7 +17,7 @@ Example: A 4x4 matrix will look like this
 |12 13 14 15  
 
 ## Experimental Methology
-Our experimental apparatus is to populate various set matrixes from sizes of 1000 to 10000, increasing in size by 100 every iteration. We will conduct a search for the worst case scenario each time, the bottom most left location, 10 times each for every iteration. This way we will have a consistent search method each time. 
+Our experimental apparatus is to populate various set matrixes from sizes of 1000 to 10000, increasing in size by 100 every iteration. We will conduct a search for the worst case scenario each time, the bottom left most location, 10 times each for every iteration. The 10 runs will be averaged into one value for that matrix size. This way we will have a consistent search method each time. 
 
 ## Results 
 
