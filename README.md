@@ -5,10 +5,10 @@ APCS2 pd 1
 Lab #0 But What Does the Data Say?  
 
 ## Hypothesis
-Searching for the worst case scenario with fixed matrices of varying sizes should result in a linear runtime. 
+Searching for the worst case scenario with preset matrices of varying sizes should result in a linear runtime. 
 
 ## Background 
-We are using fixed matrices that vary in size for our experiment. The plots for each slot will increment by 1.
+We are using preset matrices that vary in size for our experiment. The plots for each slot will increment by 1.
 
 Example: A 4x4 matrix will look like this   
 |0  1  2  3    
