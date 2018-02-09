@@ -11,9 +11,9 @@ Searching for the worst case scenario with fixed matrices of varying sizes shoul
 We are using fixed matrices that vary in size for our experiment. The plots for each slot will increment by 1.
 
 Example: A 4x4 matrix will look like this
-|0  1  2  3
-|4  5  6  7
-|8  9  10 11
+|0  1  2  3 
+|4  5  6  7 
+|8  9  10 11  
 |12 13 14 15  
 
 ## Experimental Methology
