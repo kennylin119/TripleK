@@ -23,4 +23,4 @@ Our experimental apparatus is to populate various set matrixes from sizes of 100
 ![Data](data.pdf)  
 
 ## Conclusions 
-<In progress>  
+Overall the data proved that our hypothesis was correct. With a set matrix and constant search of the worst case scenario, the only thing that was different was the size of the matrix. This linear relationship shows that our algorithm has a run time efficiency of O(n). Similar to Peter's QAF post, we also saw a relatively huge spike in nanoseconds for the first 5 iterations of the algorithm that decreased over time. After those 5 iterations, however, it started increasing steadily to form a linear relationship.
