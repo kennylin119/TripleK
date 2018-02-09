@@ -21,6 +21,7 @@ Our experimental apparatus is to populate various set matrixes from sizes of 100
 
 ## Results 
 ![Data](data.pdf)
+The data after 1500 seem to show a linear trend which supports our hypothesis. The data before 1500, however, does not support our hypothesis because the time decreased as the matrices increased. 
 
 ## Conclusions 
 <In progress>  
