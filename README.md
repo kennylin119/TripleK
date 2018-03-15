@@ -7,13 +7,13 @@ Lab #1 What Does the Data Say?
 ## Hypothesis
 Searching for the worst case scenario, a sorted array, with preset arrays of varying sizes should result in a quadratic runtime. This is because the partition
 occurs in the first element each time and increments by 1. This is the least efficient way to perform this method because half of the recursive call is not
-used. Searching for the best case scenario, in which the pivot is right in the middle, should result in n log n runtime becasue the partition part of the sort would result in the array being split into two equal sections each time, which is log n runtime, and the 
+used. Searching for the best case scenario, in which the pivot is right in the middle, should result in n log n runtime becasue the partition part of the sort would result in the array being split into two equal sections each time, which is log n runtime.
 
 ## Background 
 We are using preset arrays that vary in size for our experiment. The value of each element in the array corresponds to its index.
 
 ## Experimental Methology
-Our experimental apparatus is to populate various set arrays from sizes of 1000 to 15000, increasing in size by 100 every iteration. We will conduct a sort for the worst case scenario each time, an already sorted array, 10 times each for every iteration. The 10 runs will be averaged into one value for that array size. This way we will have a consistent sort method each time. 
+Our experimental apparatus is to populate various set arrays from sizes of 1000 to 15000, increasing in size by 100 every iteration. We will conduct a sort for the worst case scenario and best case scenario each time, an already sorted array, 10 times each for every iteration. The 10 runs will be averaged into one value for that array size. This way we will have a consistent sort method each time. 
 
 ## Results 
 ![Data](data.pdf)  
