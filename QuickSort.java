@@ -83,32 +83,43 @@ public class QuickSort
 
     return storPos;
   }//end partition
-
   /*****************************************************
    * void qsort(int[])
    * @param d -- array of ints to be sorted in place
    *****************************************************/
   public static void qsort( int[] d )
   { 
-	qsortH(d, 0, d.length - 1, 0);
+	qsort(d, 0, d.length - 1, d.length - 1);
   }
   
-  public static void qsortH( int[] d, int left, int right, int n)
+  public static void qsortMed( int[] d )
+  { 
+	qsortMed(d, 0, d.length - 1, (d.length - 1) / 2);
+  }  
+
+  public static void qsortMed( int[] d, int left, int right, int n)
   { 
 	if (left < right) {
 		int pvtPos = partition(d, left, right, n);
-		qsortH(d, left, pvtPos - 1, pvtPos - 1);
-		qsortH(d, pvtPos + 1, right, pvtPos + 1);
+		qsortMed(d, left, pvtPos - 1, (pvtPos - 1) / 2);
+		qsortMed(d, pvtPos + 1, right, (right + pvtPos + 1) / 2);
 	}
   }
-  //you may need a helper method...
-
+  
+  public static void qsort( int[] d, int left, int right, int n)
+  { 
+	if (left < right) {
+		int pvtPos = partition(d, left, right, n);
+		qsort(d, left, pvtPos - 1, pvtPos - 1);
+		qsort(d, pvtPos + 1, right, pvtPos + 1);
+	}
+  }  
 
   //main method for testing
   public static void main( String[] args )
   {
 
-
+    /*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 	
     //get-it-up-and-running, static test case:
     int [] arr1 = {7,1,5,12,3};
     System.out.println("\narr1 init'd to: " );
@@ -133,12 +144,12 @@ public class QuickSort
     qsort( arrN );
     System.out.println("arrN after sort: " );
     printArr(arrN);
-    /*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 	
+
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
 
-
+    /*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 
     //get-it-up-and-running, static test case w/ dupes:
     int [] arr2 = {7,1,5,12,3,7};
     System.out.println("\narr2 init'd to: " );
@@ -164,7 +175,7 @@ public class QuickSort
     qsort( arrMatey );
     System.out.println("arrMatey after sort: " );
     printArr(arrMatey);
-    /*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 	
+	
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
   }//end main
